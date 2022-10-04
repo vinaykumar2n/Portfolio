@@ -310,14 +310,17 @@ section .title::after {
 }
 
 /* skills section styling */
+
 .skills-images img {
-  height: 150px;
-  width: 200px;
+  height: 100px;
+  /* width: 140px; */
+  width: calc(80% - 10px);
   /* object-fit: cover; */
   border-radius: 5%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* border: 1px solid black; */
   transition: all 0.3s ease;
 }
 .skills .title::after {
@@ -330,8 +333,10 @@ section .title::after {
   /* border: 2px solid black; */
   height: 60vh;
   display: grid;
+  padding: 3%;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
